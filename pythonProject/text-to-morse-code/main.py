@@ -51,6 +51,8 @@ while code_translator:  # We use the while loop so that the application will run
     time.sleep(1)
     continue_prompt = input("Do you have more text to translate?(Type n or y)\n").lower()
     if continue_prompt == "n":
+        print("👋 Good Bye 👋")
+        time.sleep(1)
         code_translator = False
     elif continue_prompt == "y":
         os.system('clear')
