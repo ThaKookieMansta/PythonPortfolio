@@ -10,4 +10,6 @@ Output -> Type the text you want converted to morse code below
 Input -> Test
 Output -> - * *** - 
 Output -> Do you have more text to translate?(Type n or y)
+Input -> n
+Output -> 👋 Good Bye 👋
 ```
