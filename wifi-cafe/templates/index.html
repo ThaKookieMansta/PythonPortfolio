@@ -40,7 +40,7 @@
                         <p>There are no cafes in the list</p>
                         {% endif %}
 
-                        <table>
+                          <table>
                             <tr>
                               <th>Name</th>
                               <th>Location</th>
@@ -52,7 +52,7 @@
                             </tr>
                             {% for i in cafe %}
                             <tr>
-                              <td>{{i.name}}</td>
+                              <td><a href={{ i.img_url}} >{{i.name}}<a/></td>
                               <td><a href={{i.map_url}}>{{ i.location}}</a></td>
                               <td>{{ i.has_sockets}}</td>
                               <td>{{i.has_wifi}}</td>
@@ -63,13 +63,7 @@
                             </tr>
                             {% endfor %}
                             
-                          </table>    
-
-                           
-                           
-                            
-
-                        
+                          </table>                         
                     </section>
                 </div>
           </div>

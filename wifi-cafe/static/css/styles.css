@@ -50,3 +50,9 @@ body {
   .nav-pills .active {
     color: brown;
   }
+
+  #footer {
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+  }
