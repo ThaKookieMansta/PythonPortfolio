@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <!--Navbar-->
+
+        <nav class="nav nav-pills mx-5 my-2" id="pills-tab" role="tablist">
+            <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+            <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Cafes'</a>
+          </nav>
+          <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <section class="container-xxl" id="intro">
+                        <p id="intro-msg">Welcome to wifi cafe. Your only source for honest reviews on restaurants in London. Here we will be looking at the food, and whether the place is good enough for remote work. I mean, who doesn't wanna sip some delicious coffee as you work. Maybe enjoy the views that come with the place. If you are looking for a website that will provide the solution to your remote work needs then welcome to my site. #letsMakeRemoteWorkFun.</p>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <section class="container-xxl" id="cafes">
+                        {% if cafe == []: %}
+                        <p>There are no cafes in the list</p>
+                        {% endif %}
+
+                        <table>
+                            <tr>
+                              <th>Name</th>
+                              <th>Location</th>
+                              <th>Sockets</th>
+                              <th>Wifi</th>
+                              <th>Call Friendly</th>
+                              <th>Seats</th>
+                              <th>Price of coffiee</th>
+                            </tr>
+                            {% for i in cafe %}
+                            <tr>
+                              <td>{{i.name}}</td>
+                              <td><a href={{i.map_url}}>{{ i.location}}</a></td>
+                              <td>{{ i.has_sockets}}</td>
+                              <td>{{i.has_wifi}}</td>
+                              <td>{{ i.can_take_calls}}</td>
+                              <td>{{ i.seats }}</td>
+                              <td>{{ i.coffee_price }}</td>
+
+                            </tr>
+                            {% endfor %}
+                            
+                          </table>    
+
+                           
+                           
+                            
+
+                        
+                    </section>
+                </div>
+          </div>
+        </nav>
+
+        <section id="Footer">
+            <div class="footer text-center my-5">
+                <footer id="footer">
+             
+                  <p>© Copyright {{ year }} Wifi Cafe</p>
+              
+                </footer>
+            </div>
+
+          </section>        
+          <script src="" async defer></script>
+          <script src="https://kit.fontawesome.com/c26619e46e.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>

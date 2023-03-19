@@ -1,0 +1,52 @@
+body {
+    background-image: url('../imqges/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+  }
+
+ #intro-msg {
+    color:#33130a;
+    margin: 350px;
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif;
+        
+  }
+
+  #intro {
+    margin-top: 400px;
+  }
+  
+  th {
+    padding-right: 100px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  td {
+    border-right-width: 100px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    color: whitesmoke;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  
+  .nav-pills .active {
+    color: brown;
+  }
