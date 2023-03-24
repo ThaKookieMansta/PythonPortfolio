@@ -1,0 +1,26 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    color: whitesmoke;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(192, 189, 189);
+}
