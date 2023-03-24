@@ -45,7 +45,7 @@ pip install flask_sqlalchemy
 
 ## Screennshots
 
-<img src="static/images/screenshot.jpeg" alt="Screenshot" style="height: 100px; width:100px;"/>
+<img src="static/images/screenshot.jpeg" alt="Screenshot"/>
 
 
 ## License
